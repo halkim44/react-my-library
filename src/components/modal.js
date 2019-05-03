@@ -52,7 +52,7 @@ class Modal extends React.Component {
             let author = document.forms[0][1].value;
             let pages = document.forms[0][2].value;
             let read = document.forms[0].elements['read'].value;
-            read = read == "yes" ? true : false;
+            read = read === "yes" ? true : false;
           
             self.props.callback(new Book(title, author, pages, read));
             closeModal();
