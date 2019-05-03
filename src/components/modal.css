@@ -1,0 +1,113 @@
+.show-form-btn {
+    background: tomato;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+ }
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+ }
+ .back-drop {
+     position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+ }
+ .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3F7F8;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+ }
+ .modal-content > .close-button + *{
+    margin-top: 25px;
+ }
+ .close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+ }
+ .close-button:hover {
+    background-color: darkgray;
+ }
+
+#book-info >* {
+    box-sizing: border-box;
+ }
+ #book-info input {
+    width: 100%;
+    background: #E6EEEF;
+    border: none;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 9px;
+    outline-color: #FF0023;
+ }
+ #book-info input[type="radio"] {
+    width: 13px;
+ }
+ #book-info fieldset {
+    border: none;
+    background: #E6EEEF;
+    width: 100%;
+    border-radius: 9px;
+ }
+ #book-info fieldset > legend {
+    padding: 4px 12px;
+    background: #F3F7F8;
+    border-radius: 9px;
+ }
+ #book-info fieldset p {
+    margin-left: 50px;
+ }
+ #book-info #submit-button {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #FF0023;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #9D0023;
+    border-width: 1px 1px  3px;
+    margin: 12px 0;
+ }
+ #book-info #submit-button:hover {
+    background: #ad0126;
+ }
+ #book-info button:disabled {
+    opacity: .2;
+ }
+ .hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+ }
+ .show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+ }

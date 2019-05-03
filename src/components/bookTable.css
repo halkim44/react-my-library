@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    border: 1px solid #38678f;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: white;
+  }
+  th {
+    background: rgb(180, 10, 70);
+    height: 54px;
+    width: 25%;
+    font-weight: lighter;
+    text-shadow: 0 1px 0 rgb(146, 6, 55);
+    color: white;
+    border: 1px solid rgb(146, 6, 55);
+    box-shadow: inset 0px 1px 2px rgb(146, 6, 55);
+    transition: all 0.2s;
+  }
+  tr {
+    border-bottom: 1px solid #cccccc;
+    height: 60px;
+  }
+  tr:last-child {
+    border-bottom: 0px;
+  }
+  td {
+    border-right: 1px solid #cccccc;
+    padding: 10px;
+    transition: all 0.2s;
+  }
+  td:last-child {
+    border-right: 0px;
+  }
+.title-col, .author-col {
+    width: 40%;
+}
